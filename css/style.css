@@ -14,11 +14,12 @@ html * {
   box-sizing: border-box;
 }
 
+
 body {
   font-size: 100%;
   font-family: "Droid Serif", serif;
   color: #7f8c97;
-  background-color: #e9f0f5;
+  background-color: white;
 }
 
 a {
@@ -29,6 +30,7 @@ a {
 
 img {
   max-width: 100%;
+  width:300px;
 }
 
 h1, h2 {
@@ -63,7 +65,9 @@ header {
   height: 200px;
   line-height: 200px;
   text-align: center;
-  background: #303e49;
+  background-image: url("http://hk.best-wallpaper.net/wallpaper/1920x1080/1310/Taiwan-landscape-mountain-top-wood-stairs-sun_1920x1080.jpg");
+  background-size:1280px 500px;
+  background-repeat: no-repeat;
 }
 header h1 {
   color: white;
@@ -72,8 +76,8 @@ header h1 {
 }
 @media only screen and (min-width: 1170px) {
   header {
-    height: 300px;
-    line-height: 300px;
+    height: 500px;
+    line-height: 500px;
   }
   header h1 {
     font-size: 24px;
@@ -82,7 +86,7 @@ header h1 {
 }
 
 #cd-timeline {
-  position: relative;
+  position: absolute;
   padding: 2em 0;
   margin-top: 2em;
   margin-bottom: 2em;
@@ -99,8 +103,10 @@ header h1 {
 }
 @media only screen and (min-width: 1170px) {
   #cd-timeline {
-    margin-top: 3em;
+    margin-top: -32em;
     margin-bottom: 3em;
+    margin-left: 70%;
+    width:25%;
   }
   #cd-timeline::before {
     left: 50%;
@@ -110,7 +116,7 @@ header h1 {
 
 .cd-timeline-block {
   position: relative;
-  margin: 2em 0;
+  margin: 0;
 }
 .cd-timeline-block:after {
   content: "";
@@ -155,20 +161,21 @@ header h1 {
   margin-top: -12px;
 }
 .cd-timeline-img.cd-picture {
-  background: #75ce66;
+  background: #f3c1b9;
+
 }
 .cd-timeline-img.cd-movie {
-  background: #c03b44;
+  background: #f8d7c2;
 }
 .cd-timeline-img.cd-location {
-  background: #f0ca45;
+  background: #f9f8da;
 }
 @media only screen and (min-width: 1170px) {
   .cd-timeline-img {
-    width: 60px;
-    height: 60px;
+    width: 30px;
+    height: 30px;
     left: 50%;
-    margin-left: -30px;
+    margin-left: -16px;
     /* Force Hardware Acceleration in WebKit */
     -webkit-transform: translateZ(0);
     -webkit-backface-visibility: hidden;
@@ -242,6 +249,7 @@ header h1 {
   }
 }
 .cd-timeline-content {
+  width: 270px;
   position: relative;
   margin-left: 60px;
   background: white;
@@ -271,20 +279,23 @@ header h1 {
 
 .timeline-main-content {
   width: 70%;
+  margin-top: 175px;
 }
 .timeline-main-content h1 {
   font-size: 50px;
   color: black;
+  margin-left: 3.5%;
 }
 .timeline-main-content p {
- margin: 1em 0;
-  line-height: 1.6; 
+ margin: 1.5em 0;
+  line-height: 2; 
+  margin-left: 3.5%;
 }
 
 
 
 
-.cd-timeline-content .cd-read-more {
+.s-timeline-content .cd-read-more {
   float: right;
   padding: .8em 1em;
   background: #acb7c0;
@@ -298,6 +309,8 @@ header h1 {
   float: left;
   padding: .8em 0;
   opacity: .7;
+  font-family: cursive;
+
 }
 .cd-timeline-content::before {
   content: '';
@@ -312,15 +325,16 @@ header h1 {
 @media only screen and (min-width: 768px) {
   .cd-timeline-content h2 {
     font-size: 20px;
-    font-size: 1.25rem;
+    font-size: 1.1rem;
+    line-height: 1.6;
   }
   .cd-timeline-content p {
     font-size: 16px;
-    font-size: 1rem;
+    font-size: 0.8rem;
   }
   .cd-timeline-content .cd-read-more, .cd-timeline-content .cd-date {
     font-size: 14px;
-    font-size: 0.875rem;
+    font-size: 0.7rem;
   }
 }
 @media only screen and (min-width: 1170px) {
@@ -348,6 +362,8 @@ header h1 {
   }
   .cd-timeline-block .cd-timeline-content {
     float: right;
+    width: 225px;
+    margin-right:  -25%;
   }
   .cd-timeline-block .cd-timeline-content::before {
     top: 24px;
@@ -361,7 +377,7 @@ header h1 {
   }
   .cd-timeline-block .cd-timeline-content .cd-date {
     left: auto;
-    right: 122%;
+    right: 115%;
     text-align: right;
   }
   .cssanimations .cd-timeline-content.is-hidden {
@@ -497,3 +513,11 @@ header h1 {
     transform: translateX(0);
   }
 }
+
+
+.fa {
+  margin-left: 30px;
+}
+p { 
+    text-align:right;
+    }
