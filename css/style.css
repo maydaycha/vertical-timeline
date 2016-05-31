@@ -23,7 +23,7 @@ body {
 }
 
 a {
-  color: #acb7c0;
+  color: #000000;
   text-decoration: none;
   font-family: "Open Sans", sans-serif;
 }
@@ -66,7 +66,7 @@ header {
   line-height: 200px;
   text-align: center;
   background-image: url("http://hk.best-wallpaper.net/wallpaper/1920x1080/1310/Taiwan-landscape-mountain-top-wood-stairs-sun_1920x1080.jpg");
-  background-size:1280px 500px;
+  background-size:950px 500px;
   background-repeat: no-repeat;
 }
 header h1 {
@@ -103,9 +103,9 @@ header h1 {
 }
 @media only screen and (min-width: 1170px) {
   #cd-timeline {
-    margin-top: -32em;
+    margin-top: -70em;
     margin-bottom: 3em;
-    margin-left: 70%;
+    margin-left: 68%;
     width:25%;
   }
   #cd-timeline::before {
@@ -521,3 +521,5 @@ header h1 {
 p { 
     text-align:right;
     }
+
+
