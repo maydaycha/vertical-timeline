@@ -1,4 +1,4 @@
-/* -------------------------------- 
+/* --------------------------------
 
 Primary style
 
@@ -44,7 +44,7 @@ h1, h2 {
   font-weight: bold;
 }
 
-/* -------------------------------- 
+/* --------------------------------
 
 Modules - reusable parts of our design
 
@@ -62,17 +62,18 @@ Modules - reusable parts of our design
   clear: both;
 }
 
-/* -------------------------------- 
+/* --------------------------------
 
-Main components 
+Main components
 
 -------------------------------- */
 header {
   height: 200px;
   line-height: 200px;
   text-align: center;
-  background-image: url("http://hk.best-wallpaper.net/wallpaper/1920x1080/1310/Taiwan-landscape-mountain-top-wood-stairs-sun_1920x1080.jpg");
-  background-size:950px 500px;
+  background-image: url("../img/taiwan-mountain.jpg");
+  /*background-size:950px 500px;*/
+  background-size:75% 100%;
   background-repeat: no-repeat;
 }
 header h1 {
@@ -117,6 +118,10 @@ header h1 {
   #cd-timeline::before {
     left: 50%;
     margin-left: -2px;
+  }
+  body::before {
+	  left: 75%;
+	  margin-left: -2px;
   }
 }
 
@@ -285,7 +290,8 @@ header h1 {
 
 .timeline-main-content {
   width: 70%;
-  margin-top: 175px;
+  /*margin-top: 175px;*/
+  margin-top: 35px;
 }
 .timeline-main-content h1 {
   font-size: 50px;
@@ -294,8 +300,15 @@ header h1 {
 }
 .timeline-main-content p {
  margin: 1.5em 0;
-  line-height: 2; 
+  line-height: 2;
   margin-left: 3.5%;
+}
+.timeline-main-menu {
+	width:50%; 
+	margin-left:25%;
+}
+.timeline-main-article {
+	padding-top:40px;
 }
 body::before {
   /* this is the vertical line */
@@ -306,8 +319,6 @@ body::before {
   right: 300px;
   height: 100%;
   width: 10px;
-  /*background: #d7e4ed;*/
-  /*background: black;*/
   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+100&0.65+0,0+100;Neutral+Density */
   background: -moz-linear-gradient(top, rgba(0,0,0,0.65) 0%, rgba(0,0,0,0) 100%); /* FF3.6-15 */
   background: -webkit-linear-gradient(top, rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%); /* Chrome10-25,Safari5.1-6 */
@@ -541,7 +552,7 @@ body::before {
 .fa {
   margin-left: 30px;
 }
-p { 
+p {
     text-align:right;
     }
 
