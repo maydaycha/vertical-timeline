@@ -16,9 +16,47 @@
 
 </head>
 <body>
+<script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId      : '731534183654778',
+      xfbml      : true,
+      version    : 'v2.6'
+    });
+  };
+
+  (function(d, s, id){
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement(s); js.id = id;
+     js.src = "//connect.facebook.net/en_US/sdk.js";
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
+</script>
+
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/zh_TW/sdk.js#xfbml=1&version=v2.6&appId=731534183654778";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+
+
+
 	<header>
-		<h1></h1>
+
+		<div><div class ="square"></div>
+			
+		</div>
+		<div class ="hot">Hot</div>
+		<div class ="latestpost">Latest Post</div>
+		
 	</header>
+
 
 	<div class="timeline-main-content">
 		<div class="timeline-main-menu">
@@ -124,26 +162,39 @@
 
 				<div class="cd-timeline-content">
 					<h2>Pack bags, not flab: 5 ways to avoid weight gain on vacation</h2>
-					<p>Whether it's wine tasting in Italy or a backyard barbecue at your pal's beach house, most summer getaways involve major food indulgences. </p>
+					<p> </p>
 					<a href="#0" class="cd-read-more">Read more</a>
 					<span class="cd-date">02.29</span>
 				</div> <!-- cd-timeline-content -->
 			</div> <!-- cd-timeline-block -->
 
-			<div class="cd-timeline-block">
-				<div class="cd-timeline-img cd-movie">
-
-				</div> <!-- cd-timeline-img -->
-
-				<div class="cd-timeline-content">
-					<h2>Is flying more dangerous than ever?</h2>
-					<p>Is it becoming unsafe to fly?Just the opposite, say analysts.</p>
-					<span class="cd-date">01.13</span>
-				</div> <!-- cd-timeline-content -->
-			</div> <!-- cd-timeline-block -->
+			
 		</section> <!-- cd-timeline -->
 	</div> <!-- timeline-main-content -->
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 <script src="js/main.js"></script> <!-- Resource jQuery -->
+
+
+<div class="fb-comments" data-href="http://localhost/~zoly/vertical-timeline/index.html" data-width="850" data-numposts="5"></div>
+
+
+<div class ="footer" style="background-color:#F8D6C2">
+<div class="group" style="background-color:#F8D6C2">
+	<i class="fa fa-facebook-square fa-2x" aria-hidden="true"></i>
+	<i class="fa fa-google-plus-square fa-2x" aria-hidden="true"></i>
+    <i class="fa fa-twitter-square fa-2x" aria-hidden="true"></i>
+    </div> 
+    
+</div>
+
+
+
+
+</div>
+
+
+
+
+
 </body>
 </html>
